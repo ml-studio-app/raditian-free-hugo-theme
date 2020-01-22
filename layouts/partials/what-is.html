@@ -1,0 +1,33 @@
+{{ if .Site.Data.homepage.what_is.enable }}
+<section class="section section--border-bottom rad-animation-group">
+  <div class="container">
+    <h2 class="rad-fade-down">
+      {{ .Site.Data.homepage.what_is.title }}
+    </h2>
+
+    <p class="row row--padded lead">
+      {{ .Site.Data.homepage.what_is.content | safeHTML }}
+    </p>
+
+    <div class="row row--padded rad-fade-down">
+      <div class="col-12">
+        <div class="clients">
+          {{ range .Site.Data.homepage.what_is.techs }}
+          <div class="clients__item">
+            <a href="{{ .url }}">
+              <img
+                class="lozad img-responsive"
+                style="width: 128px; height: 128px;"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="{{ .logo.x | absURL }}"
+                alt="{{ .alt }}"
+              />
+            </a>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
