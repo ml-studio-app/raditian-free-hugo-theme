@@ -1,14 +1,14 @@
 {{ if .Site.Data.homepage.about.enable }}
-<section class="section rad-animation-group pb-0" id="about">
-  <div class="container rad-fade-down">
+<section id="about" class="section rad-animation-group section--last">
+  <div class="container rad-fade-down pb-5">
     <div class="row d-flex flex-column-reverse flex-md-row">
       <div class="about__profile-picture col-12 col-md-6">
         <img
-          class="lozad img-responsive image-left-overflow"
+          class="lozad img-responsive image-left-overflow img-clip-right-backward"
           src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
           data-src="{{ .Site.Data.homepage.about.image.x | absURL }}"
           data-srcset="{{ .Site.Data.homepage.about.image.x | absURL }} 1x, {{ .Site.Data.homepage.about.image._2x | absURL }} 2x"
-          alt="Profile Picture"
+          alt="About us photo"
         />
       </div>
       <div class="col-12 col-md-6 my-auto my-auto">

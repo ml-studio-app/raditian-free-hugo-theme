@@ -9,6 +9,16 @@
       alt="{{ .Site.Data.homepage.showcase.image.alt }}"
     />
   </div>
+  <div class="rad-showcase__bg">
+    <img
+      class="lozad img-responsive"
+      style="margin-top: 280px; max-height: 421px;"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="{{ .Site.Data.homepage.showcase.imageOver.x | absURL }}"
+      data-srcset="{{ .Site.Data.homepage.showcase.imageOver.x | absURL }} 1x, {{ .Site.Data.homepage.showcase.imageOver._2x | absURL }} 2x"
+      alt="{{ .Site.Data.homepage.showcase.imageOver.alt }}"
+    />
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
@@ -24,7 +34,7 @@
           <!-- Begin Mailchimp Signup Form -->
           <!-- <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">-->
           <style type="text/css">
-              #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+              #mc_embed_signup{background:transparent; clear:left; font:14px Helvetica,Arial,sans-serif; }
               /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
                  We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
           </style>

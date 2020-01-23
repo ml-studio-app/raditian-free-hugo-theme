@@ -10693,8 +10693,9 @@ html, html body {
     }
 
     .img-clip-left-backward {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 14% 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 14% 100%)
+        max-height: 500px;
+        /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 14% 100%);*/
+        /*clip-path: polygon(0 0, 100% 0, 100% 100%, 14% 100%)*/
     }
 }
 
@@ -10838,18 +10839,21 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
 
 @media (min-width: 768px) {
     .img-clip-left-forward {
-        -webkit-clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%);
-        clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%)
+        max-height: 500px;
+        /*-webkit-clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%);*/
+        /*clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%)*/
     }
 
     .img-clip-right-backward {
-        -webkit-clip-path: polygon(0 0, 86% 0, 100% 100%, 0 100%);
-        clip-path: polygon(0 0, 86% 0, 100% 100%, 0 100%)
+        max-height: 500px;
+        /*-webkit-clip-path: polygon(0 0, 86% 0, 100% 100%, 0 100%);*/
+        /*clip-path: polygon(0 0, 86% 0, 100% 100%, 0 100%)*/
     }
 
     .img-clip-right-forward {
-        -webkit-clip-path: polygon(0 0, 100% 0, 86% 100%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 86% 100%, 0 100%)
+        max-height: 500px;
+        /*-webkit-clip-path: polygon(0 0, 100% 0, 86% 100%, 0 100%);*/
+        /*clip-path: polygon(0 0, 100% 0, 86% 100%, 0 100%)*/
     }
 
     .section div[class*=col-] img.image-left-overflow {
@@ -10872,14 +10876,14 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
     color: #fff
 }
 
-.section--contact {
+.section--last {
     padding-bottom: 0;
     background-image: url(../img/contact-bg.png);
     background-repeat: repeat-x;
     background-position: 0 100%
 }
 
-.section--contact .container {
+.section--last .container {
     background-color: #fff;
     box-shadow: 0 42px 34px -16px rgba(0, 0, 0, .3)
 }
