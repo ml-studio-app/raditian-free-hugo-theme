@@ -27,18 +27,15 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ .Site.BaseURL | absURL }}">HOME</a>
           </li>
+
           {{ range .Site.Menus.header }}
           <li class="nav-item">
-            <a data-scroll class="nav-link" href="{{ .URL }}"
-              >{{ .Name | upper }}</a
-            >
+            <a data-scroll class="nav-link" href="{{ .URL }}">{{ .Name | upper }}</a>
           </li>
           {{ end }}
+
           <li class="nav-item">
-            <a class="btn btn-primary"
-               style="margin-left: 24px;"
-               href="https://docs.mlstudioapp.com"
-               target="_blank">Docs</a>
+            <a class="nav-link" href="https://docs.mlstudioapp.com" target="_blank">Docs</a>
           </li>
         </ul>
       </div>
