@@ -11214,6 +11214,20 @@ input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, tex
     transition-timing-function: cubic-bezier(.645, .045, .355, 1)
 }
 
+.header .navbar .nav-button {
+    margin-left: 0px;
+    margin-top: 12px;
+    margin-bottom: 12px
+}
+
+@media (min-width: 992px) {
+    .header .navbar .nav-button {
+        margin-left: 12px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
 .header .navbar-text {
     display: -webkit-box;
     display: flex;
